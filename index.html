@@ -8,7 +8,7 @@
   	<header class="main-header">
   		<nav class="main-navigation">
   			<a class="main-header-logo">
-  				<img src="img/nerds-logo.svg" alt="Логотип компании Нёрдс">
+  				<img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип компании Нёрдс">
   			</a>
   			<ul class="site-navigation">
   				<li><a href="info.html">Студия</a></li>
@@ -21,16 +21,30 @@
   			</ul>
   		</nav>
   	</header>
+  	
   	<main class="container">
   		
   		<h1 class="visually-hidden">Дизайн студия "Nёrds"</h1>
   		<h2 class="visually-hidden">Слайдер</h2>
-  		
   		<section class="slider">
-  			<img src="img/slide1.png" alt="Изображение телефонов">
-  			<b class="slider-title">Долго, дорого, скрупулезно.</b>
+  			<img src="img/slide1.png" width="698" height="413" alt="Изображение телефонов">
+  			<b class="slider-title">Долго, дорого, скрупулезно</b>
   			<p class="slider-text">Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
-  			<span class="button-more=information" href="#">Узнать больше</span>
+  			<a class="button-more=information" href="catalog.html">Узнать больше</a>
+  		</section>
+
+  		<section class="slider">
+  			<img src="img/slide2.png" width="698" height="413" alt="Изображение Моноблоков">
+  			<b class="slider-title">Любим математику как никто другой</b>
+  			<p class="slider-text">Никакого креатива, только математические формулы для расчета идеальных пропорций.</p>
+  			<a class="button-more=information" href="catalog.html">Узнать больше</a>
+  		</section>
+
+  		<section class="slider">
+  			<img src="img/slide3.png" width="698" height="413" alt="Изображение Планшета и телефона">
+  			<b class="slider-title">Только ночь, только хардкор</b>
+  			<p class="slider-text">Работать днем, как все? Мы против этого.Ближе к полуночи работа только начинается.</p>
+  			<a class="button-more=information" href="catalog.html">Узнать больше</a>
   		</section>
   		
   		<section class="services">
@@ -70,7 +84,7 @@
   		
   			<section class="features">
   				<h2 class="visually-hidden">Преимущества</h2>
-  				<img src="img/nerds-illustration.png" alt="Логотип компании Нёрдс">
+  				<img src="img/nerds-illustration.png" width="360" height="208" alt="Логотип компании Нёрдс">
   				<b class="features-title">С 2004 года любим точность во всем:</b>
   				<table class="features-table">
   					<th>
@@ -90,10 +104,10 @@
   		<section class="partners">
   			<h2 class="visually-hidden">Партнеры</h2>
   			<ul class="partners-list">
-  				<li class="partners-item"><a href="https://htmlacademy.ru/intensive/htmlcss">html academy</a></li>
-  				<li class="partners-item"><a href="#">BORODINSKI</a></li>
-  				<li class="partners-item"><a href="#">PINK</a></li>
-  				<li class="partners-item"><a href="#">MISHKA</a></li>
+  				<li class="partners-item"><a href="https://htmlacademy.ru/intensive/htmlcss" alt="Логотип htmlacademy">html academy</a></li>
+  				<li class="partners-item"><a href="#" alt="Логотип BORODINSKI">BORODINSKI</a></li>
+  				<li class="partners-item"><a href="#" alt="Логотип PINK">PINK</a></li>
+  				<li class="partners-item"><a href="#" alt="Логотип MISHKA">MISHKA</a></li>
   			</ul>
   		</section>
   	</main>
@@ -101,7 +115,7 @@
   	<footer class="main-footer">
   		<section class="footer-contacts">
   			<h2 class="visually-hidden">Контакты</h2>
-  			<img src="img/map-with-token.jpg" alt="Карта">
+  			<img src="img/map-with-token.jpg" width="1440" height="416" alt="Офис компании Санкт-Петербург, ул. Б. Конюшенная, д. 19/8">
   			<div class="footer-contacts-information">
   				<b class="footer-contacts-title">NЁRDS DESIGN STUDIO</b>
   				<p class="footer-contacts-text">191186, Санкт-Петербург,<br>
@@ -127,10 +141,24 @@
   	</footer>
   	
   	<section class="modal modal-login">
-  		<h2>Форма с вопросом</h2>
+  		<h2 class="visually-hidden">Форма с вопросом</h2>
   		<b>Напишите нам</b>
-  		<!--Тут будет форма-->
-  		<span class="modal-close">x</span>
+  		<form class="apointment-form" action="#" method="post">
+  			<p class="form-field">
+  				<label for="fullname">Ваше имя:</label>
+  				<input type="text" name="fullname" id="fullname" placeholder="Имя Фамилия">
+  			</p>
+  			<p class="form-field">
+  				<label for="mail">Ваш email:</label>
+  				<input type="email" name="mail" id="mail" placeholder="email@example.com">
+  			</p>
+  			<p class="form-field">
+  				<label for="message">Текст письма:</label>
+  				<textarea id="message" name="message">В свободной форме</textarea>
+  			</p>
+  				<button class="buttons" type="submit">Отправить</button>
+  		</form>
+  		<button type="button" class="modal-close">Закрыть</button>
   	</section>
   </body>
 </html>
