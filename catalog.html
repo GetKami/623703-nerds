@@ -2,7 +2,10 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>Нёрдс-Каталог</title>
+    <title>Магазин готовых шаблонов</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
   	<header class="main-header">
@@ -42,7 +45,7 @@
             </label>
           </p>
         </div>
-        <form action="#" method="get">
+        <form class="filter" action="#" method="get">
           <fieldset>
             <legend>Сетка:</legend>
             <ul>
@@ -68,7 +71,7 @@
                 <label for="slider">Слайдер</label>
               </li>
               <li>
-                <input type="checkbox" name="product-block" id="block">
+                <input type="checkbox" name="product-block" id="block" disabled>
                 <label for="block">Блок преимуществ</label>
               </li>
               <li>
@@ -97,8 +100,8 @@
             <li class="sorting-item"><a href="#">По цене</a></li>
             <li class="sorting-item"><a href="#">По типу</a></li>
             <li class="sorting-item"><a href="#">По названию</a></li>
-            <li class="sorting-item"><a href="#">Стрелка вверх</a></li>
-            <li class="sorting-item"><a href="#">Стрелка вниз</a></li>
+            <li class="sorting-item"><a href="#">По возрастанию</a></li>
+            <li class="sorting-item"><a href="#">По убыванию</a></li>
           </ul>
         </section>
         <ul class="catalog-list">
@@ -168,7 +171,7 @@
                 <img src="img/img-kvast.jpg" width="360" height="576" alt="Проект КВАСТ">
               </a>
             </p>
-            <div href="catalog-item-list">
+            <div class="catalog-item-list">
               <h3 class="catalog-item-title">КВАСТ</h3>
               <p class="catalog-item-text">Промо-сайт производителя крафтового кваса</p>
               <a class="button" href="сatalog-item-6.html">9 900 руб.</a>
@@ -195,20 +198,24 @@
       <a class="button-contact-us" href="form.html">Напишите нам</a>
       </section>
       
-      <div class="footer-social">
-        <b class="footer-social-title">Давайте дружить, это выгодно!</b>
-        <p class="footer-social-text">Скидка 10% для друзей из социальных сетей.</p>
-        <ul>
-          <li><a class="social-button" href="#">Вконтакте</a></li>
-          <li><a class="social-button" href="#">Фейсбук</a></li>
-          <li><a class="social-button" href="#">Инстаграм</a></li>
-        </ul>
-      </div>
+      <section class="footer-social">
+        <div class="footer-social-buttons">
+          <ul class="footer-social-buttons-list">
+            <li><a class="social-button-vk" href="#">Вконтакте</a></li>
+            <li><a class="social-button-fb" href="#">Фейсбук</a></li>
+            <li><a class="social-button-instagram" href="#">Инстаграм</a></li>
+          </ul>
+          </div>
+          <div class="footer=call-to-action">
+          <b class="footer-call-to-action-title">Давайте дружить, это выгодно!</b>
+          <p class="footer-call-to-action-text">Скидка 10% для друзей из социальных сетей.</p>
+        </div>
+      </section>
     </footer>
     
     <section class="modal modal-login">
       <h2 class="visually-hidden">Форма с вопросом</h2>
-      <b>Напишите нам</b>
+      <b class="form-title">Напишите нам</b>
       <form class="apointment-form" action="#" method="post">
         <p class="form-field">
           <label for="fullname">Ваше имя:</label>
@@ -220,11 +227,11 @@
         </p>
         <p class="form-field">
           <label for="message">Текст письма:</label>
-          <textarea id="message" name="message">В свободной форме</textarea>
+          <textarea id="message" name="message" placeholder="В свободной форме"></textarea>
         </p>
           <button class="buttons" type="submit">Отправить</button>
       </form>
-      <button type="button" class="modal-close">Закрыть</button>
+      <button class="modal-close" type="button">Закрыть</button>
     </section>
   </body>
 </html>

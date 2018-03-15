@@ -3,6 +3,9 @@
   <head>
     <meta charset="utf-8">
     <title>Нёрдс</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
   	<header class="main-header">
@@ -27,40 +30,40 @@
   		<h1 class="visually-hidden">Дизайн студия "Nёrds"</h1>
   		<h2 class="visually-hidden">Слайдер</h2>
   		<section class="slider">
-  			<img src="img/slide1.png" width="698" height="413" alt="Изображение телефонов">
-  			<b class="slider-title">Долго, дорого, скрупулезно</b>
-  			<p class="slider-text">Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
-  			<a class="button-more=information" href="catalog.html">Узнать больше</a>
-  		</section>
-
-  		<section class="slider">
-  			<img src="img/slide2.png" width="698" height="413" alt="Изображение Моноблоков">
-  			<b class="slider-title">Любим математику как никто другой</b>
-  			<p class="slider-text">Никакого креатива, только математические формулы для расчета идеальных пропорций.</p>
-  			<a class="button-more=information" href="catalog.html">Узнать больше</a>
-  		</section>
-
-  		<section class="slider">
-  			<img src="img/slide3.png" width="698" height="413" alt="Изображение Планшета и телефона">
-  			<b class="slider-title">Только ночь, только хардкор</b>
-  			<p class="slider-text">Работать днем, как все? Мы против этого.Ближе к полуночи работа только начинается.</p>
-  			<a class="button-more=information" href="catalog.html">Узнать больше</a>
+  			<div class="slide">
+  				<img src="img/slide1.png" width="698" height="413" alt="Изображение телефонов">
+  				<b class="slide-title">Долго, дорого, скрупулезно.</b>
+  				<p class="slide-text">Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
+  				<a class="button-more-information" href="catalog.html">Узнать больше</a>
+  			</div>
+  			<div class="slide">
+  				<img src="img/slide2.png" width="698" height="413" alt="Изображение Моноблоков">
+  				<b class="slide-title">Любим математику как никто другой</b>
+  				<p class="slide-text">Никакого креатива, только математические формулы для расчета идеальных пропорций.</p>
+  				<a class="button-more-information" href="catalog.html">Узнать больше</a>
+  			</div>
+  			<div class="slide">
+  				<img src="img/slide3.png" width="698" height="413" alt="Изображение Планшета и телефона">
+  				<b class="slide-title">Только ночь, только хардкор</b>
+  				<p class="slide-text">Работать днем, как все? Мы против этого.Ближе к полуночи работа только начинается.</p>
+  				<a class="button-more-information" href="catalog.html">Узнать больше</a>
+  			</div>
   		</section>
   		
   		<section class="services">
   			<h2 class="visually-hidden">Услуги</h2>
   			<ul class="services-list">
-  				<li class="services-item">
-  					<h3>Веб сайты</h3>
+  				<li class="services-item-1">
+  					<h3>Веб-сайты</h3>
   					<p class="services-text">Мир никогда не будет прежним после того как увидит ваш сайт!</p>
   					<a class="button-order-red" href="#">Заказать</a>
   				</li>
-  				<li class="services-item">
+  				<li class="services-item-2">
   					<h3>Приложения</h3>
   					<p class="services-text">Покорите топ-10 приложений в AppStore и Google Play</p>
   					<a class="button-order-green" href="#">Заказать</a>
   				</li>
-  				<li class="services-item">
+  				<li class="services-item-3">
   					<h3>Презентации</h3>
   					<p class="services-text">Вы даже не подозреваете, насколько вы изумительны!</p>
   					<a class="button-order-yellow" href="#">Заказать</a>
@@ -88,14 +91,14 @@
   				<b class="features-title">С 2004 года любим точность во всем:</b>
   				<table class="features-table">
   					<th>
-  						<td>146 <sup>&#37;</sup></td>
-  						<td>100 <sup>&#37;</sup></td>
-  						<td>50 <sup>&#37;</sup></td>
+  						<td class="features-stat">146 <sup>&#37;</sup></td>
+  						<td class="features-stat">100 <sup>&#37;</sup></td>
+  						<td class="features-stat">50 <sup>&#37;</sup></td>
   					</th>
   					<tr>
-  						<td>Уровень самоотдачи</td>
-  						<td>Соблюдение сроков</td>
-  						<td>Минимальная предоплата</td>
+  						<td class="features-item">Уровень самоотдачи</td>
+  						<td class="features-item">Соблюдение сроков</td>
+  						<td class="features-item">Минимальная предоплата</td>
   					</tr>
   				</table>
   			</section>
@@ -104,10 +107,10 @@
   		<section class="partners">
   			<h2 class="visually-hidden">Партнеры</h2>
   			<ul class="partners-list">
-  				<li class="partners-item"><a href="https://htmlacademy.ru/intensive/htmlcss" alt="Логотип htmlacademy">html academy</a></li>
-  				<li class="partners-item"><a href="#" alt="Логотип BORODINSKI">BORODINSKI</a></li>
-  				<li class="partners-item"><a href="#" alt="Логотип PINK">PINK</a></li>
-  				<li class="partners-item"><a href="#" alt="Логотип MISHKA">MISHKA</a></li>
+  				<li><a  class="partners-item-1" href="https://htmlacademy.ru/intensive/htmlcss" alt="Логотип htmlacademy">html academy</a></li>
+  				<li class="partners-item-2"><a href="#" alt="Логотип BORODINSKI">BORODINSKI</a></li>
+  				<li class="partners-item-3"><a href="#" alt="Логотип PINK">PINK</a></li>
+  				<li class="partners-item-4"><a href="#" alt="Логотип MISHKA">MISHKA</a></li>
   			</ul>
   		</section>
   	</main>
@@ -127,10 +130,10 @@
   		
   		<section class="footer-social">
   			<div class="footer-social-buttons">
-  				<ul>
-  					<li><a class="social-button" href="#">Вконтакте</a></li>
-  					<li><a class="social-button" href="#">Фейсбук</a></li>
-  					<li><a class="social-button" href="#">Инстаграм</a></li>
+  				<ul class="footer-social-buttons-list">
+  					<li><a class="social-button-vk" href="#">Вконтакте</a></li>
+  					<li><a class="social-button-fb" href="#">Фейсбук</a></li>
+  					<li><a class="social-button-instagram" href="#">Инстаграм</a></li>
   				</ul>
   		    </div>
   		    <div class="footer=call-to-action">
@@ -142,7 +145,7 @@
   	
   	<section class="modal modal-login">
   		<h2 class="visually-hidden">Форма с вопросом</h2>
-  		<b>Напишите нам</b>
+  		<b class="form-title">Напишите нам</b>
   		<form class="apointment-form" action="#" method="post">
   			<p class="form-field">
   				<label for="fullname">Ваше имя:</label>
@@ -154,11 +157,11 @@
   			</p>
   			<p class="form-field">
   				<label for="message">Текст письма:</label>
-  				<textarea id="message" name="message">В свободной форме</textarea>
+  				<textarea id="message" name="message" placeholder="В свободной форме"></textarea>
   			</p>
   				<button class="buttons" type="submit">Отправить</button>
   		</form>
-  		<button type="button" class="modal-close">Закрыть</button>
+  		<button class="modal-close" type="button">Закрыть</button>
   	</section>
   </body>
 </html>
