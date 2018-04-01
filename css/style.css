@@ -289,12 +289,12 @@ a {
 	min-height: 350px;
 	width: 1100px;
 	list-style: none;
-	margin-bottom: 80px;
+	margin-bottom: 78px;
 }
 
 .services-list h3 {
 	margin: 0;
-	margin-bottom: 25px;
+	margin-bottom: 15px;
 	padding: 0;
 	font-size: 24px;
 	font-weight: 700;
@@ -324,7 +324,7 @@ a {
 .services-item-1 img,
 .services-item-2 img,
 .services-item-3 img {
-	margin-bottom: 28px;
+	margin-bottom: 19px;
 }
 
 .button-order-red,
@@ -388,10 +388,11 @@ a {
 .about {
 	min-height: 380px;
 	width: 680px;
-	margin-top: 80px;
+	margin-top: 75px;
 }
 
 .about-title {
+	display: block;
 	margin: 0;
 	padding: 0;
 	font-size: 45px;
@@ -403,7 +404,7 @@ a {
 .about-text {
 	margin: 0;
 	margin-top: 30px;
-	margin-bottom: 44px;
+	margin-bottom: 40px;
 	padding: 0;
 	font-size: 16px;
 	font-weight: 400;
@@ -430,7 +431,7 @@ a {
 .about-services-item {
 	position: relative;
 	margin: 0;
-	margin-bottom: 29px;
+	margin-bottom: 22px;
 	padding: 0;
 	padding-left: 37px;
 	font-size: 16px;
@@ -459,7 +460,7 @@ a {
 	min-height: 420px;
 	margin: 0;
 	padding: 0;
-	margin-bottom: 80px;
+	margin-bottom: 65px;
 	border-top: 2px solid #eeeeee;
 }
 
@@ -472,7 +473,7 @@ a {
 }
 
 .features img {
-	margin-bottom: 40px;
+	margin-bottom: 28px;
 }
 
 .features table {
@@ -493,10 +494,14 @@ a {
 	text-transform: uppercase;
 }
 
+.features-stat sup{
+	font-size: 30px;
+}
+
 .features-stat {
 	padding: 0;
-	padding-left: 20px;
-	padding-bottom: 30px;
+	padding-left: 5px;
+	padding-bottom: 25px;
 	font-size: 45px;
 	font-weight: 700;
 	line-height: inherit;
@@ -511,7 +516,7 @@ a {
 
 .features-item {
 	padding: 0;
-	padding-left: 20px;
+	padding-left: 5px;
 	font-size: 16px;
 	font-weight: 400;
 	line-height: 18px;
@@ -529,8 +534,8 @@ a {
 	margin: 0;
 	padding: 0;
 	list-style: none;
-	padding-top: 50px;
-	padding-bottom: 50px;
+	padding-top: 45px;
+	padding-bottom: 45px;
 	margin-bottom: 80px;
 	border-top: 2px solid #eeeeee;
 	border-bottom: 2px solid #eeeeee;
@@ -636,7 +641,7 @@ a {
 .footer-contacts {
 	position: relative;
 	min-height: 416px;
-	margin-bottom: 70px;
+	margin-bottom: 72px;
 	background-image: url(../img/map-with-token.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -647,8 +652,8 @@ a {
   	top: 54px;
   	left: 371px;
   	width: 220px;
-  	min-height: 220px;
-  	padding: 50px 50px;
+  	height: 210px;
+  	padding: 48px 50px;
   	background: #ffffff;
   	z-index: 1;
 }
@@ -662,7 +667,7 @@ a {
 
 .footer-contacts-text {
 	margin: 0;
-	margin-top: 30px;
+	margin-top: 20px;
 	padding: 0;
 	font-size: 16px;
 	font-weight: 400;
@@ -672,7 +677,7 @@ a {
 }
 
 .footer-contacts-text-1 {
-	margin-bottom: 20px;
+	margin-bottom: 18px;
 }
 
 .footer-contacts-text-2 {
@@ -727,7 +732,9 @@ a {
 .social-button-vk,
 .social-button-fb,
 .social-button-instagram {
-	display: block;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 	width: 78px;
 	height: 78px;
 	text-align: center;
@@ -1206,33 +1213,49 @@ input[type="radio"].visually-hidden {
 
 .catalog-item {
 	position: relative;
+	padding: 0;
+	margin: 0;
 	min-height: 576px;
 	width: 360px;
 	margin-bottom: 35px;
-	margin-right: 35px;
+	margin-right: 40px;
 }
 
 .catalog-item:nth-child(2n) {
 	margin-right: 0;
 }
 
-.catalog-item h3 {
-	font-size: 18px;
-	line-height: 30px;
-	font-weight: 700;
-	color: #000000;
+.catalog-item-image {
+	margin: 0;
+	padding: 0;
+	line-height: 0px;
 }
 
-.catalog-item p {
+.catalog-item-title {
+    margin: 0;
+    margin-top: 32px;
+    padding: 0;
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.catalog-item-text{
 	padding: 0;
-	margin: 0;
+	margin: 0 auto;
+	margin-top: 20px;
+	width: 240px;
 	font-size: 16px;
-	line-height: 0px;
+	line-height: 18px;
 	font-weight: 400;
 	color: #666666;
 }
 
 .catalog-item a {
+	width: 200px;
+    margin: 0 auto;
+    margin-top: 25px;
 	font-size: 16px;
 	line-height: 18px;
 	font-weight: 500;
@@ -1253,6 +1276,8 @@ input[type="radio"].visually-hidden {
 }
 
 .catalog-item svg{
+	margin: 0;
+	padding: 0;
 	opacity: 0.12;
 }
 
@@ -1267,31 +1292,25 @@ input[type="radio"].visually-hidden {
 .catalog-item-list {
 	content: "";
 	position: absolute;
-	top: 370px;
+	display: block;
+	justify-content: center;
+	bottom: 0;
 	left: 0;
 	margin: 0;
-	padding-left: 80px;
-	padding-right: 80px;
-	padding-top: 32px;
-	padding-bottom: 43px;
+	width: 360px;
+	min-height: 230px;
 	text-align: center; 
 	background-color: #eeeeee;
 	opacity: 0;
 	z-index: 1;
 }
 
-.catalog-item-list:hover {
+.catalog-item:hover .catalog-item-list {
 	opacity: 1;
 }
 
-.catalog-item-title {
-	margin: 0;
-	margin-bottom: 22px;
-	padding: 0;
-}
-
 .button {
-	width: 200px;
+	width: 240px;
 	margin-top: 30px;
 	font-size: 16px;
 	font-weight: 500;
@@ -1325,20 +1344,29 @@ input[type="radio"].visually-hidden {
 	margin-bottom: 60px;
 
 	list-style: none;
-	min-height: 50px;
+	min-height: 49px;
+}
+
+.pagination-item {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-right: 12px;
 }
 
 .pagination-item a {
-	display: block;
-	width: 50px;
-	height: 50px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 49px;
+	height: 49px;
 	font-size: 16px;
 	line-height: 18px;
 	font-weight: 500;
 	color: #000000;
 	text-align: center;
 	vertical-align: middle;
-
+	text-transform: uppercase;
 	background-color: #eeeeee;
 	border-radius: 3px;
 }
@@ -1361,6 +1389,8 @@ input[type="radio"].visually-hidden {
 }
 
 .pagination-item-current a {
+	width: 44px;
+	height: 44px;
 	background-color: #ffffff;
 	color: #000000;
 	border: 3px solid #dbdbdb;
@@ -1376,11 +1406,61 @@ input[type="radio"].visually-hidden {
 	box-shadow: none;
 }
 
-.next-page {
-	width: 260px;
+.next-page a{
+	min-width: 260px;
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(-2000px);
+  }
+
+  70% {
+    transform: translateY(30px);
+  }
+
+  90% {
+    transform: translateY(-10px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes shake {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translateX(-10px);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translateX(10px);
+  }
+}
+
+.modal-show {
+	display: block;
+	animation: bounce 0.6s;
+}
+
+.modal-error {
+  animation: shake 0.6s;
 }
 
 .modal {
+	display: none;
 	position: fixed;
 	top: 170px;
 	left: 50%;
