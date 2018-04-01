@@ -1272,7 +1272,7 @@ input[type="radio"].visually-hidden {
 
 .catalog-item a:active {
 	box-shadow: inset 0 3px #c13135
-	border-color: transparent;
+	border-color: !important transparent; 
 }
 
 .catalog-item svg{
