@@ -923,8 +923,6 @@ input[type="radio"].visually-hidden {
 	font-weight: 500;
 	padding-top: 78px;
 	padding-bottom: 105px;
-	padding-left: auto;
-	padding-right: auto;
 	margin-top: 0;
 	margin-bottom: 60px;
 	color: #000000;
@@ -1041,28 +1039,28 @@ input[type="radio"].visually-hidden {
 	opacity: 0.1;
 }
 
-.filter-input-radio:disabled:checked + label::after {
+.filter-input-radio:disabled + label::after {
  	background-color: #000000;
  	opacity: 0.1;
 }
 
-.filter-input-cheсkbox + label {
+.filter input + label {
 	color: #283136;
 }
 
-.filter-input-cheсkbox:checked + label {
+.filter input:checked + label {
 	color: #283136;
 }
 
-.filter-input-cheсkbox:focus + label {
+.filter input:focus + label {
 	color: #000000;
 }
 
-.filter-input-cheсkbox:hover + label{
+.filter input:hover + label{
 	color: #000000;
 }
 
-.filter-input-cheсkbox:disabled + label{
+.filter input:checked:disabled + label{
 	color: #283136;
 	opacity: 0.3;
 }
@@ -1109,7 +1107,7 @@ input[type="radio"].visually-hidden {
   	opacity: 0.1;
 }
 
-.filter-input-checkbox:disabled:checked + label::after {
+.filter-input-checkbox:checked:disabled + label::after {
   	opacity: 0.1;
 }
 
@@ -1273,8 +1271,6 @@ input[type="radio"].visually-hidden {
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
-	-ms-flex-wrap: wrap;
-	    flex-wrap: wrap;
 	-webkit-box-pack: justify;
 	    -ms-flex-pack: justify;
 	        justify-content: space-between;
@@ -1293,6 +1289,7 @@ input[type="radio"].visually-hidden {
 	-webkit-box-pack: justify;
 	    -ms-flex-pack: justify;
 	        justify-content: space-between;
+	white-space: nowrap;       
 	margin-right: 27px;
 }
 
@@ -1877,8 +1874,6 @@ input[type="radio"].visually-hidden {
 	-webkit-box-shadow: inset 0 3px #c13135;
 	        box-shadow: inset 0 3px #c13135; 
 }
-
-
 
 
 
